@@ -18,6 +18,14 @@ body{
     grid-gap: 5px; /* This sets both grid-row-gap and grid-column-gap to 10px */
 }
 
+.orange-btn{
+    background-color: #fda978;
+}
+
+.calculator-grid > button.orange-btn:hover{
+    background-color: #f58c50;
+}
+
 
 .calculator-grid > button{
     outline: 2px #cecece solid;
@@ -34,7 +42,6 @@ body{
 .span-two{
     grid-column: span 3;
 }
-
 .output{
     grid-column: 1/-1;
     background-color: #cecece;
@@ -55,3 +62,13 @@ body{
 .output .previous-operand{
     font-size: 1.5rem;
 }
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
