@@ -13,12 +13,14 @@ body{
     justify-content: center;
     align-content: center;
     min-height: 100vh; 
-    grid-template-columns: repeat(6, 100px);
+    grid-template-columns: repeat(5, 100px);
     grid-template-rows: minmax(120px, auto) repeat(4, 100px);
+    grid-gap: 5px; /* This sets both grid-row-gap and grid-column-gap to 10px */
 }
 
+
 .calculator-grid > button{
-    outline: none;
+    outline: 2px #cecece solid;
     font-size: 2rem;
     cursor: pointer;
     border: 1px #fff solid;
@@ -30,7 +32,7 @@ body{
 }
 
 .span-two{
-    grid-column: span 2;
+    grid-column: span 3;
 }
 
 .output{
